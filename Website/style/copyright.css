@@ -12,7 +12,6 @@ body {
 
 footer{
 	width: 100%;
-	background: #5b30aa;
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -23,4 +22,10 @@ footer{
 	background: #814de2;
 	color: rgb(255, 255, 255);
 	font-size: 12px;
+}
+@media (max-width: 1500px) {
+	.footerbottom{
+		color: rgba(0, 0, 0, 0);
+		background: rgba(0, 0, 0, 0);
+	}
 }
