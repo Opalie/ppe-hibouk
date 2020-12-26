@@ -13,9 +13,10 @@ body {
 footer{
 	width: 100%;
 	background: #5b30aa;
-	display: flex;
-	flex-direction: column;
-	margin-top: auto;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: column;
 }
 
 .footerbottom{
