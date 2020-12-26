@@ -20,7 +20,7 @@
         <!-------------------------------SIGN-IN------------------------------------------->
         <form action="" class="sign-in-form" method="post">
 
-          <h2 class="title">Sign in</h2>
+          <h2 class="title">Sign-in</h2>
 
           <div class="input-field">
             <i class="fas fa-envelope"></i>
@@ -40,7 +40,7 @@
         <!-------------------------------SIGN-UP------------------------------------------->
         <form action="" class="sign-up-form" method="post">
 
-          <h2 class="title">Sign up</h2>
+          <h2 class="title">Sign-up</h2>
 
           <div class="input-field">
             <i class="fas fa-user"></i>
@@ -48,12 +48,12 @@
           </div>
 
           <div class="input-field">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-users"></i>
             <input type="text" name="register_lastname" placeholder="Last name" />
           </div>
 
           <div class="input-field">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-user-secret"></i>
             <input type="text" name="register_username" placeholder="Username" />
           </div>
 
