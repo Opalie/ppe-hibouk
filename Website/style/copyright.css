@@ -12,14 +12,14 @@ body {
 
 footer{
 	width: 100%;
-	background: rgb(44,47,69);
+	background: #5b30aa;
 	display: flex;
 	flex-direction: column;
 	margin-top: auto;
 }
 
 .footerbottom{
-	background: rgb(40, 97, 114);
+	background: #814de2;
 	color: rgb(255, 255, 255);
 	font-size: 12px;
 }
