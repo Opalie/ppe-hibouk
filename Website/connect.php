@@ -170,5 +170,8 @@
   }
   ?>
 </div>
+<?php
+include_once 'copyright.php'
+?>
 
 </html>
