@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : Dim 27 déc. 2020 à 14:06
+-- Généré le : Dim 27 déc. 2020 à 14:29
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -54,9 +54,11 @@ INSERT INTO `author` (`author_id`, `author_lastname`, `author_firstname`, `autho
 
 CREATE TABLE `comments` (
   `com_id` int(11) NOT NULL,
-  `com_rating` float NOT NULL,
+  `com_user` int(11) NOT NULL,
+  `com_rating` tinyint(1) NOT NULL,
   `com_review` text NOT NULL,
-  `com_ebook` int(11) NOT NULL
+  `com_ebook` int(11) NOT NULL,
+  `com_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -149,7 +151,9 @@ ALTER TABLE `author`
 -- Index pour la table `comments`
 --
 ALTER TABLE `comments`
-  ADD PRIMARY KEY (`com_id`);
+  ADD PRIMARY KEY (`com_id`),
+  ADD KEY `com_user` (`com_user`),
+  ADD KEY `com_ebook` (`com_ebook`);
 
 --
 -- Index pour la table `ebook`
@@ -223,6 +227,13 @@ ALTER TABLE `wishlist`
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `comments`
+--
+ALTER TABLE `comments`
+  ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`com_user`) REFERENCES `user` (`user_id`),
+  ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`com_ebook`) REFERENCES `ebook` (`book_id`);
 
 --
 -- Contraintes pour la table `ebook`
