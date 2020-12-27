@@ -13,33 +13,33 @@
     </div>
 
     <div class="middle">
-        <h1><a class="fa fa-user searchuser" aria-hidden="true" href="./"> My Account</a></h1>
+        <h2><a class="fa fa-user searchuser" aria-hidden="true" href="./"> My Account</a></h2>
         <div class="searchcontainer">
             <i class="fa fa-search searchicon"></i>
             <input class="searchbox" type="search" name="search" placeholder=" Search...">
             <input type="submit" value="Search" class="searchbutton">
         </div>
-        <h1><a class="fa fa-heart searchheart" aria-hidden="true" href=""></a></h1>
-        <h1><a class="fa fa-shopping-basket searchbasket" aria-hidden="true" href=""></a></h1>
+        <h2><a class="fa fa-heart searchheart" aria-hidden="true" href=""></a></h2>
+        <h2><a class="fa fa-shopping-basket searchbasket" aria-hidden="true" href=""></a></h2>
     </div>
 
     <div class="lower">
 
         <span>
-            <h1>
+            <h2>
                 <nav>
-                    <a href="">DRAMA</a>
-                    <a href="">ROMANCE</a>
-                    <a href="">ADVENTURE</a>
-                    <a href="">THRILLER</a>
-                    <a href="">POEM</a>
-                    <a href="">CLASSIC</a>
-                    <a href="">MYSTERY</a>
-                    <a href="">FANTASY</a>
-                    <a href="">HORROR</a>
+                    <a class="theme" href="">DRAMA</a>
+                    <a class="theme" href="">ROMANCE</a>
+                    <a class="theme" href="">ADVENTURE</a>
+                    <a class="theme" href="">THRILLER</a>
+                    <a class="theme" href="">POEM</a>
+                    <a class="theme" href="">CLASSIC</a>
+                    <a class="theme" href="">MYSTERY</a>
+                    <a class="theme" href="">FANTASY</a>
+                    <a class="theme" href="">HORROR</a>
                     <a class="seemore" href="">SEE MORE...</a>
                 </nav>
-            </h1>
+            </h2>
         </span>
 
     </div>
