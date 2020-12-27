@@ -18,9 +18,11 @@ include_once 'session_function.php'
 include_once 'navbar.php'
 ?>
 
+<?php
+include_once 'user_menu.php'
+?>
+
 <body>
-
-
 
 </body>
 

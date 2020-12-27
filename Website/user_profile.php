@@ -10,7 +10,7 @@ include_once 'session_function.php'
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
-    <link rel="stylesheet" href="style/user_menu.css" />
+    <link rel="stylesheet" href="style/user_profile.css" />
     <title>Profile</title>
 </head>
 
@@ -18,17 +18,11 @@ include_once 'session_function.php'
 include_once 'navbar.php'
 ?>
 
-<body>
+<?php
+include_once 'user_menu.php'
+?>
 
-    <!----------------------------->
-    <div class="side-bar">
-        <ul>
-            <li><a href="">Profile</a></li> 
-            <li><a href="">My Ebooks</a></li>
-            <li><a href="">My Wishlist</a></li> 
-        </ul>
-    </div>
-    <!----------------------------->
+<body>
 
 </body>
 

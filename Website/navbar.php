@@ -13,7 +13,7 @@
     </div>
 
     <div class="middle">
-        <h2><a class="fa fa-user searchuser" aria-hidden="true" href="./"> My Account</a></h2>
+        <h2><a class="fa fa-user searchuser" aria-hidden="true" href="user_profile.php"> My Account</a></h2>
         <div class="searchcontainer">
             <i class="fa fa-search searchicon"></i>
             <input class="searchbox" type="search" name="search" placeholder=" Search...">
