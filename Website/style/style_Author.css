@@ -35,6 +35,10 @@ div.card {
     height: auto;
 }
 
+img.card-img-top {
+    height: 80%;
+}
+
 div.card-body {
     padding: 1.24rem 0;
     text-align: center;
