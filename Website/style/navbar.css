@@ -10,6 +10,11 @@ header{
     box-shadow: 1px 12px 50px rgba(0, 0, 0, 0.836);
 }
 
+header.navbar {
+    display: block;
+    padding: 0;
+}
+
 /**********************HEADER_UPPER**********************/
 .upper{
     box-sizing: border-box;
@@ -41,7 +46,8 @@ header{
 }
 
 .logo{
-    height: 100px;
+    height: 10vh;
+    width: auto;
     cursor: pointer;
 }
 

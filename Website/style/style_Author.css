@@ -1,12 +1,15 @@
-
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
 
 #emp-profile {
     width: 100%;
-    min-height: 100%;
-    height: auto;
+    height: 100%;
     padding: 2% 1% 0% 1%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    /* margin-top: 3%;
+    margin-bottom: 3%; */
     border-radius: 0.5rem;
     background: #fff;
     display: flex;
@@ -14,8 +17,32 @@
     justify-content: space-between;
 }
 
+div.author-part-1 {
+    border-right: 1px solid #dee2e6;
+}
+
+div.author-part-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+div.book-list {
+    height: 80%;
+}
+
+div.card {
+    width: 11rem;
+    height: auto;
+}
+
+div.card-body {
+    padding: 1.24rem 0;
+    text-align: center;
+}
+
 .profile-img {
     text-align: center;
+    
 }
 
 .profile-img img {
@@ -65,7 +92,7 @@
 
 div.author-description {
     height: 15%;
-    
+
 }
 
 .profile-head {
@@ -78,6 +105,26 @@ div.author-description {
     font-weight: 600;
     border: none;
 }
+
+ul#myTab {
+    border: none;
+    display: table;
+}
+
+ul#myTab li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ul#myTab li p {
+    margin: 0;
+}
+
+
+.profile-head .nav-tabs {
+    margin-bottom: 5%;
+}
+
 
 .profile-head .nav-tabs .nav-link.active {
     border: none;
@@ -137,15 +184,19 @@ div.author-info {
     height: 100%;
 }
 
-div.book-container {
+div.container-book {
     display: inline-flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
 }
+
 
 div.book-container img {
     width: 25%;
     height: auto;
 }
+
+
 
 div.pagination-container {
     display: inline-flex;
