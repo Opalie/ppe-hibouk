@@ -1,0 +1,13 @@
+body{
+    background-color: #EFEFEF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page{
+    background-color: white;
+    margin: auto 20%;
+    padding: 50px;
+}
