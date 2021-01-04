@@ -4,6 +4,16 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<footer>
+    <div class="footerbottom">
+        <p class="p-0 m-0">Copyright &copy; Vélès Corporation - 2020. All rights reserved.</p>
+    </div>
+</footer>
+=======
+>>>>>>> Abdel
 <!-- Footer -->
 <footer id="footer">
     <div class="container">
@@ -38,4 +48,9 @@
         </div>
     </div>
 </footer>
+<<<<<<< HEAD
 <!-- ./Footer -->
+=======
+<!-- ./Footer -->
+>>>>>>> origin/master
+>>>>>>> Abdel
