@@ -55,19 +55,19 @@ include_once 'navbar.php'
                                                 <p class="mr-2">Page :</p>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">1</a>
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="" role="tab" aria-controls="home" aria-selected="true">1</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2</a>
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="" role="tab" aria-controls="profile" aria-selected="false">2</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">3</a>
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="" role="tab" aria-controls="profile" aria-selected="false">3</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">4</a>
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="" role="tab" aria-controls="profile" aria-selected="false">4</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">5</a>
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="" role="tab" aria-controls="profile" aria-selected="false">5</a>
                                             </li>
 
                                         </ul>
@@ -86,7 +86,7 @@ include_once 'navbar.php'
                                         <div class="row">
                                             <div class="container-book">
                                                 <div class="card">
-                                                    <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/O2e2GUi8sJ7jCajwhVlOfJnvhIKbAA4WqBKbDvDi-st2joq3S9Ty1jWobhrB6PkWOlTUePBLjP1Hx2WUkG0krwUsbh5JdFDQf0CIrJQ" alt="">
+                                                    <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/71n7Fe2mGRL.jpg" alt="">
                                                     <div class="card-body">
                                                         <p class="card-text">Central park</p>
                                                     </div>
