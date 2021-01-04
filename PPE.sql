@@ -2,10 +2,10 @@
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost
--- Généré le : Dim 27 déc. 2020 à 14:29
--- Version du serveur :  5.7.24
--- Version de PHP : 7.2.19
+-- Host: localhost
+-- Generation Time: Jan 04, 2021 at 01:07 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.2.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `ppe`
+-- Database: `ppe`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `author`
+-- Table structure for table `author`
 --
 
 CREATE TABLE `author` (
@@ -38,7 +38,7 @@ CREATE TABLE `author` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `author`
+-- Dumping data for table `author`
 --
 
 INSERT INTO `author` (`author_id`, `author_lastname`, `author_firstname`, `author_birth`, `author_death`, `author_bio`, `author_pic`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `author` (`author_id`, `author_lastname`, `author_firstname`, `autho
 -- --------------------------------------------------------
 
 --
--- Structure de la table `comments`
+-- Table structure for table `comments`
 --
 
 CREATE TABLE `comments` (
@@ -64,7 +64,7 @@ CREATE TABLE `comments` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ebook`
+-- Table structure for table `ebook`
 --
 
 CREATE TABLE `ebook` (
@@ -80,7 +80,7 @@ CREATE TABLE `ebook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `ebook`
+-- Dumping data for table `ebook`
 --
 
 INSERT INTO `ebook` (`book_id`, `book_title`, `book_author`, `book_date`, `book_desc`, `book_price`, `book_cover`, `book_genre`, `book_comment`) VALUES
@@ -92,7 +92,7 @@ INSERT INTO `ebook` (`book_id`, `book_title`, `book_author`, `book_date`, `book_
 -- --------------------------------------------------------
 
 --
--- Structure de la table `genre`
+-- Table structure for table `genre`
 --
 
 CREATE TABLE `genre` (
@@ -101,7 +101,7 @@ CREATE TABLE `genre` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `genre`
+-- Dumping data for table `genre`
 --
 
 INSERT INTO `genre` (`genre_id`, `genre_name`) VALUES
@@ -112,7 +112,19 @@ INSERT INTO `genre` (`genre_id`, `genre_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `user`
+-- Table structure for table `owned`
+--
+
+CREATE TABLE `owned` (
+  `owned_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `book_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -129,26 +141,27 @@ CREATE TABLE `user` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `wishlist`
+-- Table structure for table `wishlist`
 --
 
 CREATE TABLE `wishlist` (
   `wishlist_id` int(11) NOT NULL,
-  `ebook_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `book_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Index pour les tables déchargées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `author`
+-- Indexes for table `author`
 --
 ALTER TABLE `author`
   ADD PRIMARY KEY (`author_id`);
 
 --
--- Index pour la table `comments`
+-- Indexes for table `comments`
 --
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`com_id`),
@@ -156,7 +169,7 @@ ALTER TABLE `comments`
   ADD KEY `com_ebook` (`com_ebook`);
 
 --
--- Index pour la table `ebook`
+-- Indexes for table `ebook`
 --
 ALTER TABLE `ebook`
   ADD PRIMARY KEY (`book_id`),
@@ -165,78 +178,93 @@ ALTER TABLE `ebook`
   ADD KEY `book_genre` (`book_genre`);
 
 --
--- Index pour la table `genre`
+-- Indexes for table `genre`
 --
 ALTER TABLE `genre`
   ADD PRIMARY KEY (`genre_id`);
 
 --
--- Index pour la table `user`
+-- Indexes for table `owned`
+--
+ALTER TABLE `owned`
+  ADD PRIMARY KEY (`owned_id`),
+  ADD KEY `book_id` (`book_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`),
   ADD KEY `user_wishlist` (`user_wishlist`);
 
 --
--- Index pour la table `wishlist`
+-- Indexes for table `wishlist`
 --
 ALTER TABLE `wishlist`
   ADD PRIMARY KEY (`wishlist_id`),
-  ADD KEY `ebook_id` (`ebook_id`);
+  ADD KEY `book_id` (`book_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `author`
+-- AUTO_INCREMENT for table `author`
 --
 ALTER TABLE `author`
   MODIFY `author_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT pour la table `comments`
+-- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
   MODIFY `com_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `ebook`
+-- AUTO_INCREMENT for table `ebook`
 --
 ALTER TABLE `ebook`
   MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT pour la table `genre`
+-- AUTO_INCREMENT for table `genre`
 --
 ALTER TABLE `genre`
   MODIFY `genre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT pour la table `user`
+-- AUTO_INCREMENT for table `owned`
+--
+ALTER TABLE `owned`
+  MODIFY `owned_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `wishlist`
+-- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
   MODIFY `wishlist_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Contraintes pour les tables déchargées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `comments`
+-- Constraints for table `comments`
 --
 ALTER TABLE `comments`
   ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`com_user`) REFERENCES `user` (`user_id`),
   ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`com_ebook`) REFERENCES `ebook` (`book_id`);
 
 --
--- Contraintes pour la table `ebook`
+-- Constraints for table `ebook`
 --
 ALTER TABLE `ebook`
   ADD CONSTRAINT `ebook_ibfk_1` FOREIGN KEY (`book_author`) REFERENCES `author` (`author_id`),
@@ -244,16 +272,24 @@ ALTER TABLE `ebook`
   ADD CONSTRAINT `ebook_ibfk_3` FOREIGN KEY (`book_genre`) REFERENCES `genre` (`genre_id`);
 
 --
--- Contraintes pour la table `user`
+-- Constraints for table `owned`
+--
+ALTER TABLE `owned`
+  ADD CONSTRAINT `owned_ibfk_1` FOREIGN KEY (`book_id`) REFERENCES `ebook` (`book_id`),
+  ADD CONSTRAINT `owned_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
+
+--
+-- Constraints for table `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`user_wishlist`) REFERENCES `wishlist` (`wishlist_id`);
 
 --
--- Contraintes pour la table `wishlist`
+-- Constraints for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  ADD CONSTRAINT `wishlist_ibfk_1` FOREIGN KEY (`ebook_id`) REFERENCES `ebook` (`book_id`);
+  ADD CONSTRAINT `wishlist_ibfk_1` FOREIGN KEY (`book_id`) REFERENCES `ebook` (`book_id`),
+  ADD CONSTRAINT `wishlist_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
