@@ -26,7 +26,15 @@ include_once 'user_menu.php'
 
     <div class="profile">
         <div class="content">
+
             <form action="" class="inside" method="post">
+
+                <div class="picture">
+                    <div class="imgborder">
+                        <img src="img/noimagefound.png" alt="">
+                    </div>
+                    <input class="input" type="file" name="picture_input" accept="image/png, image/jpeg"></input>
+                </div>
 
                 <h2>Profile informations</h2>
 
@@ -47,9 +55,14 @@ include_once 'user_menu.php'
 
                 <button class="btn solid" type="submit" name="register_button">Save changes</button>
             </form>
+
         </div>
 
 </body>
+
+<?php
+include_once 'user_profile_function.php'
+?>
 
 <?php
 include_once 'copyright.php'
