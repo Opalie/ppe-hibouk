@@ -117,8 +117,4 @@
 include_once 'connect_function.php'
 ?>
 
-<?php
-include_once 'copyright.php'
-?>
-
 </html>
