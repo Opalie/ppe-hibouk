@@ -24,6 +24,31 @@ include_once 'user_menu.php'
 
 <body>
 
+    <div class="profile">
+        <div class="content">
+            <form action="" class="inside" method="post">
+
+                <h2>Profile informations</h2>
+
+                <div class="input-field">
+                    <i class="fas fa-user-secret"></i>
+                    <input type="text" name="register_username" placeholder="Change your Username" />
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="register_email" placeholder="Change your Email" />
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="register_password" placeholder="Change your Password" />
+                </div>
+
+                <button class="btn solid" type="submit" name="register_button">Save changes</button>
+            </form>
+        </div>
+
 </body>
 
 <?php
