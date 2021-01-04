@@ -4,22 +4,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9a5a4cc9f15c19df02c2cc7c745211960f2aeddd
-<footer>
-    <div class="footerbottom">
-        <p class="p-0 m-0">Copyright &copy; Vélès Corporation - 2020. All rights reserved.</p>
-    </div>
-</footer>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Abdel
->>>>>>> 9a5a4cc9f15c19df02c2cc7c745211960f2aeddd
+
 <!-- Footer -->
 <footer id="footer">
     <div class="container">
@@ -47,20 +32,9 @@
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p><span class="veles-name">Vélès Corporation</span> was made for a training school.</p>
-                <p class="h6">© All right Reversed.</p>
+                <p class="p-0 m-0">Copyright &copy;<span class="veles-name">Vélès Corporation</span> - 2020. All rights reserved.</p>
             </div>
             <hr>
         </div>
     </div>
-<<<<<<< HEAD
 </footer>
-=======
-</footer>
-<<<<<<< HEAD
-<!-- ./Footer -->
-=======
-<!-- ./Footer -->
->>>>>>> origin/master
->>>>>>> Abdel
->>>>>>> 9a5a4cc9f15c19df02c2cc7c745211960f2aeddd
