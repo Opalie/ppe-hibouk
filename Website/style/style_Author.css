@@ -95,7 +95,7 @@ div.card-body {
 }
 
 div.author-description {
-    height: 15%;
+    height: 20%;
 
 }
 
@@ -173,6 +173,7 @@ div.author-info {
 
 .profile-author ul {
     list-style: none;
+    padding: 0;
 }
 
 .profile-books-tab label {

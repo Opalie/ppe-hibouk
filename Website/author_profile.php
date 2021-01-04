@@ -30,7 +30,7 @@ include_once 'navbar.php'
                         <img src="https://c7.alamy.com/comp/J0EH7M/portrait-of-guillaume-musso-03092016-mollonaopale-J0EH7M.jpg" alt="" />
                     </div>
                 </div>
-                <div class="col p-0">
+                <div class="col">
                     <div class="profile-author">
                         <p id="titleAuthor" class="mt-2">Guillaume Musso</p>
                         <ul>
