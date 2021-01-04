@@ -1,14 +1,25 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link href="style/footer.css" rel="stylesheet">
+<link href="style/copyright.css" rel="stylesheet">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9a5a4cc9f15c19df02c2cc7c745211960f2aeddd
 <footer>
     <div class="footerbottom">
         <p class="p-0 m-0">Copyright &copy; Vélès Corporation - 2020. All rights reserved.</p>
     </div>
 </footer>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Abdel
+>>>>>>> 9a5a4cc9f15c19df02c2cc7c745211960f2aeddd
 <!-- Footer -->
 <footer id="footer">
     <div class="container">
@@ -42,4 +53,14 @@
             <hr>
         </div>
     </div>
+<<<<<<< HEAD
 </footer>
+=======
+</footer>
+<<<<<<< HEAD
+<!-- ./Footer -->
+=======
+<!-- ./Footer -->
+>>>>>>> origin/master
+>>>>>>> Abdel
+>>>>>>> 9a5a4cc9f15c19df02c2cc7c745211960f2aeddd
