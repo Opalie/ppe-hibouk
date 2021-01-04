@@ -13,9 +13,9 @@
 <!----------------------------->
 <div class="side-bar">
     <ul>
-        <li><a href="">Profile</a></li>
-        <li><a href="">My Ebooks</a></li>
-        <li><a href="">My Wishlist</a></li>
+        <li><a href="user_profile.php">Profile</a></li>
+        <li><a href="user_ebooks.php">My Ebooks</a></li>
+        <li><a href="user_wishlist.php">My Wishlist</a></li>
         <a class="logout" href="logout.php">Disconnect</a>
     </ul>
 </div>
