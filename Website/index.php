@@ -1,5 +1,5 @@
 <?php
-include_once 'session_function.php'
+include_once 'session_function.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ include_once 'session_function.php'
 </head>
 
 <?php
-include_once 'navbar.php'
+include_once 'navbar.php';
 ?>
 
 <body>
@@ -23,7 +23,7 @@ include_once 'navbar.php'
 </body>
 
 <?php
-include_once 'copyright.php'
+include_once 'copyright.php';
 ?>
 
 <script src="js/.js"></script>
