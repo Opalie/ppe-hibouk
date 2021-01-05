@@ -25,7 +25,6 @@ if (isset($_GET['book_id'])) {
     exit('Ebook ID does not exist!');
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -38,6 +37,8 @@ if (isset($_GET['book_id'])) {
     <title><?= $ebook['book_title'] ?> - <?= $ebook['author_lastname'] ?> <?= $ebook['author_firstname'] ?></title>
 </head>
 
+<div class="navbar"><?= include 'navbar.php'; ?></div>
+
 <body>
 
     <div class="page">
@@ -45,16 +46,15 @@ if (isset($_GET['book_id'])) {
         <div class="left">
             <img src="<?= $ebook['book_cover'] ?>" alt="<?= $ebook['book_title'] ?>">
             <span class="price">
-               <p>&euro; <?= $ebook['book_price'] = number_format($ebook['book_price'], 2) // 8 = number of decimals, . = decimal separator
-  ?></p> 
+               <p>&euro; <?= $ebook['book_price'] = number_format($ebook['book_price'], 2) ?></p> 
             </span>
             <button type="submit">Add to cart</button>
         </div>
 
         <div class="right">
-            <h1 class="name"><?= $ebook['book_title'] ?> - <?= $ebook['author_firstname'] ?> <?= $ebook['author_lastname'] ?> (<?= $ebook['book_date'] ?>)</h1>
+            <h1 class="name"><?= $ebook['book_title'] ?> - <a href="/author.php?ebook=$author=<?= $ebook['book_author'] ?>"><?= $ebook['author_firstname'] ?> <?= $ebook['author_lastname'] ?></a> (<?= $ebook['book_date'] ?>)</h1>
             <hr>
-            <?= $ebook['genre_name'] ?>
+            <a href=""><?= $ebook['genre_name'] ?></a>
             <br>
             <div class="description">
                <p><?= $ebook['book_desc'] ?></p> 
@@ -80,4 +80,4 @@ if (isset($_GET['book_id'])) {
 
 ?>
 
-<!--<a href="/product.php?ebook=$id_ebook" > $titre_ebook </a>
+<!--/product.php?ebook=$id_book=?
