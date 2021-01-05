@@ -120,7 +120,7 @@ include_once 'navbar.php'
             </div>
 
             <?php
-            include_once 'footer.php';
+            include_once 'copyright.php';
             ?>
 
 
