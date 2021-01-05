@@ -1,14 +1,6 @@
-<!------------------------------- Connecte à la bdd  --------------------------------------------->
 <?php
-try {
-  $bdd = new PDO('mysql:host=localhost;dbname=ppe;charset=UTF8', 'root', '');
-} catch (Exception $e) {
-  die('Erreur :' . $e->getMessage());
-}
-?>
-<!------------------------------------------------------------------------------------------------>
 
-<?php
+include '_dbSettings.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
