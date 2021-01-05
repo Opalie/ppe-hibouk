@@ -43,12 +43,12 @@ include_once 'navbar.php'
                 </div>
             </div>
             <div class="col-lg-10 author-part-2 h-100">
-                <div class="container-fluid author-description p-0" style="border-bottom: 1px solid #dee2e6;">
+                <div class="container-fluid author-description p-0">
                     <div class="row">
                         <div class="col author-description ">
                             <div class="profile-head">
-                                <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere ratione similique quia saepe nesciunt nihil vitae qui voluptates. Eos assumenda aliquam aperiam impedit incidunt aspernatur beatae voluptates fugit deleniti?</p>
-                                <div class="col-md-6">
+                                <div class="profile-author-p">
+                                    <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere ratione similique quia saepe nesciunt nihil vitae qui voluptates. Eos assumenda aliquam aperiam impedit incidunt aspernatur beatae voluptates fugit deleniti?</p>
                                     <div class="pagination-container">
                                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                                             <li class="nav-item">
