@@ -20,6 +20,8 @@ include_once 'navbar.php';
 
 <body>
 
+//all ebooks go here now
+
 </body>
 
 <?php
