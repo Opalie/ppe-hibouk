@@ -6,8 +6,51 @@ body{
     box-sizing: border-box;
 }
 
+h1{
+    font-size: larger;
+    margin: 0;
+}
+
 .page{
     background-color: white;
-    margin: auto 20%;
-    padding: 50px;
+    margin: auto 25%;
+    display: grid;
+    grid-template-columns: 250px auto;
+    column-gap: 20px;
+    padding: 30px 30px 20px
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+button[type=submit]{
+    display: flex;
+    font-size: 16px;
+    font-family: Segoe UI;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    color: white;
+    background: #36B700;
+    border-radius: 10px;
+    border: 0 solid white;
+}
+
+p{
+    color:teal;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.right p{
+    color: black;
+    text-align: justify;
+    font-size: 14px;
 }
