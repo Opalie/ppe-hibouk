@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <title>navbar</title>
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="icon" href="img/favicon.ico"/>
@@ -10,7 +12,6 @@
     <div class="upper">
         <h1 class="brand">Vélès</h1>
         <img class="logo" src="img/logo.png">
-        <a class="contact" href="mailto:"><button>Contact</button></a>
     </div>
 
     <div class="middle">
@@ -48,3 +49,7 @@
     </div>
 
 </header>
+<body>
+ 
+</body>
+</html>

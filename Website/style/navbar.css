@@ -32,20 +32,6 @@ header.navbar {
     font-size: 35px;
 }
 
-.upper a,
-button {
-    font-size: 16px;
-}
-
-.upper button {
-    color: rgb(24, 23, 23);
-    transition: all 300ms;
-}
-
-.upper button:hover {
-    color: white;
-}
-
 .logo {
     width: 100px;
 }
