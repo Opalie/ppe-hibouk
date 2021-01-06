@@ -36,7 +36,8 @@ div.card {
 }
 
 img.card-img-top {
-    height: 80%;
+    height: 40vh;
+    width: auto;
 }
 
 div.card-body {
@@ -95,7 +96,7 @@ div.card-body {
 }
 
 div.author-description {
-    height: 15%;
+    height: 17%;
 
 }
 
@@ -125,9 +126,6 @@ ul#myTab li p {
 }
 
 
-.profile-head .nav-tabs {
-    margin-bottom: 5%;
-}
 
 
 .profile-head .nav-tabs .nav-link.active {
@@ -173,6 +171,7 @@ div.author-info {
 
 .profile-author ul {
     list-style: none;
+    padding: 0;
 }
 
 .profile-books-tab label {
@@ -194,6 +193,10 @@ div.container-book {
     justify-content: space-around;
 }
 
+p.description {
+    font-size: 1rem;
+}
+
 
 div.book-container img {
     width: 25%;
@@ -203,8 +206,8 @@ div.book-container img {
 
 
 div.pagination-container {
-    display: inline-flex;
-    justify-content: center;
+    display: block;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .flex {

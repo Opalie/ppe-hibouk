@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-footer{
-	width: 100%;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	text-align: column;
-=======
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
@@ -22,7 +14,6 @@ section .section-title {
 footer {
     background: #a300bf;
     width: 100%;
->>>>>>> origin/master
 }
 
 #footer h5{

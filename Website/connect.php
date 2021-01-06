@@ -114,11 +114,7 @@
 </body>
 
 <?php
-include_once 'connect_function.php'
-?>
-
-<?php
-include_once 'copyright.php'
+include_once './include/connect_function.php'
 ?>
 
 </html>

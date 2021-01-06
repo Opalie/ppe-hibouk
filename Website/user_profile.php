@@ -1,5 +1,5 @@
 <?php
-include_once 'session_function.php'
+include_once './include/session_function.php'
 ?>
 
 <!DOCTYPE html>
@@ -15,11 +15,11 @@ include_once 'session_function.php'
 </head>
 
 <?php
-include_once 'navbar.php'
+include_once './include/navbar.php'
 ?>
 
 <?php
-include_once 'user_menu.php'
+include_once './include/user_menu.php'
 ?>
 
 <body>
@@ -61,11 +61,11 @@ include_once 'user_menu.php'
 </body>
 
 <?php
-include_once 'user_profile_function.php'
+include_once './include/user_profile_function.php'
 ?>
 
 <?php
-include_once 'copyright.php'
+include_once './include/copyright.php'
 ?>
 
 <script src="js/.js"></script>
