@@ -3,7 +3,6 @@ body{
 }
 
 .navbar{
-    z-index:1;
     width: 100%;
 }
 
@@ -31,11 +30,11 @@ a{
     margin: 25px 25%;
     display: grid;
     grid-template-columns: 250px auto;
-    column-gap: 20px;
+    column-gap: 15px;
     padding: 30px 30px 20px
 }
 
-img{
+.page img{
     display: block;
     margin-left: auto;
     margin-right: auto;

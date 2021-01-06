@@ -15,6 +15,23 @@ header.navbar {
 }
 
 
+/*this centers 3 items*/
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.box:first-child>span {
+    margin-right: auto;
+}
+
+.box:last-child>span {
+    margin-left: auto;
+}
+
+
 /**********************HEADER_UPPER**********************/
 
 .upper {
@@ -22,9 +39,8 @@ header.navbar {
     margin: 0;
     background-color: #2a75b3;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 80px;
 }
 
 .upper h1 {
@@ -101,12 +117,19 @@ header.navbar {
     background-color: #5499d1;
 }
 
+.middle .btn {
+    display: flex;
+    align-items: center;
+}
+
 .middle .searchheart {
     display: flex;
+    margin-left: 10px;
 }
 
 .middle .searchbasket {
     display: flex;
+    margin-left: 10px;
 }
 
 
@@ -122,7 +145,7 @@ header.navbar {
     background-color: #2a75b3;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .lower h2 nav a {
@@ -139,9 +162,10 @@ header.navbar {
 
 /*********************************************************/
 
+
 /*If the window is 1200px or less, the theme class disapears*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1050px) {
     .theme {
         display: none;
     }

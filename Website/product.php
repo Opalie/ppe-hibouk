@@ -72,12 +72,9 @@ if (isset($_GET['book_id'])) {
 
 </body>
 
+
 </html>
 
-<?php 
 
-
-
-?>
 
 <!--/product.php?ebook=$id_book=?
