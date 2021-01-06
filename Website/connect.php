@@ -11,7 +11,9 @@
 </head>
 
 <body>
-
+  <?php
+  include_once './include/connect_function.php'
+  ?>
   <div class="container">
 
     <div class="forms-container">
@@ -33,8 +35,14 @@
           </div>
 
           <button class="btn solid" type="submit" name="login_button">Login</button>
+          <?php
+          if (isset($error_msg)) {
+            echo '<p style="color: red;">' . $error_msg . "</p>";
+          }
 
+          ?>
         </form>
+
         <!--------------------------------------------------------------------------------->
 
         <!-------------------------------SIGN-UP------------------------------------------->
@@ -113,8 +121,5 @@
 
 </body>
 
-<?php
-include_once './include/connect_function.php'
-?>
 
 </html>
