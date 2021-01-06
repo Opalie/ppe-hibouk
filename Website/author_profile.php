@@ -1,5 +1,5 @@
 <?php
-include('./include/connect_function.php');
+require('./include/connect_function.php');
 ?>
 
 <!DOCTYPE html>
