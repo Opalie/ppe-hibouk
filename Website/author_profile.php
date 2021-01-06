@@ -1,8 +1,5 @@
 <?php
-
-require('connect_function.php');
-
-
+require('./include/connect_function.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +14,7 @@ require('connect_function.php');
 </head>
 
 <?php
-include_once 'navbar.php'
+include_once './include/navbar.php'
 ?>
 
 <body>
@@ -120,7 +117,7 @@ include_once 'navbar.php'
             </div>
 
             <?php
-            include_once 'copyright.php';
+            include_once './include/copyright.php';
             ?>
 
 

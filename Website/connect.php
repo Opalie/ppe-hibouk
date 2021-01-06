@@ -114,7 +114,7 @@
 </body>
 
 <?php
-include_once 'connect_function.php'
+include_once './include/connect_function.php'
 ?>
 
 </html>

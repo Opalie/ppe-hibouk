@@ -37,7 +37,7 @@ if (isset($_GET['book_id'])) {
     <title><?= $ebook['book_title'] ?> - <?= $ebook['author_lastname'] ?> <?= $ebook['author_firstname'] ?></title>
 </head>
 
-<div class="navbar"><?= include 'navbar.php'; ?></div>
+<div class="navbar"><?= include './include/navbar.php'; ?></div>
 
 <body>
 
