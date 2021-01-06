@@ -1,6 +1,7 @@
 <?php
 
-include '_dbSettings.php';
+include 'session_function.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -19,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     //Erreur ou incorrect                        
     else {
-      echo "Email or password wrong !";
+      $error_msg = "Email or password wrong !";
     }
   }
 
