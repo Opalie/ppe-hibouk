@@ -1,40 +1,26 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link href="style/copyright.css" rel="stylesheet">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/footer.css">
+    <style>
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="container">
-        <div class="container-title pt-4">
-            <h5>Links</h5>
-        </div>
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <ul class="list-unstyled quick-links">
-                    <li><a><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a><i class="fa fa-angle-double-right"></i>Contact</a></li>
-                    <li><a><i class="fa fa-angle-double-right"></i>Privacy notice & condition of use</a></li>
-                </ul>
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="box">
+            <div class="up">
+                <a href="/FAQ">FAQ </a> - <a href="mailto:test.hello@gmail.com"> Contact </a> - <a href="/PN"> Privacy Notice </a> - <a href="/COU"> Condition of use</a>
             </div>
+            <div class="img"><a href="https://github.com/Opalie/ppe-hibouk"><img src="img/github.png" alt="Source Code"></a></div>
+            <div class="img"><a href="https://www.promeo-formation.fr/nos-centres/compiegne"><img src="img/promeo.png" alt="Promeo Compiègne"></a></div>
+
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                <ul class="list-unstyled list-inline social text-center">
-                    <li class="list-inline-item"><a href=""><i class="fab fa-paypal"></i></i></a></li>
-                    <li class="list-inline-item" style="width: 7%;"><a href=""><img src="img/logo-promeo.jpg" style="width: 100%; height: auto;" alt=""></a></li>
-                    <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            <hr>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p class="p-0 m-0">Copyright &copy;<span class="veles-name">Vélès Corporation</span> - 2020. All rights reserved.</p>
-            </div>
-            <hr>
-        </div>
-    </div>
-</footer>
+    </footer>
+</body>
+
+</html>

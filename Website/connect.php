@@ -121,5 +121,11 @@
 
 </body>
 
+<<<<<<< Updated upstream
+=======
+<?php
+include_once './include/connect_function.php';
+?>
+>>>>>>> Stashed changes
 
 </html>

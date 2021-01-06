@@ -15,7 +15,7 @@
         <div class="box"><span>
                 <h1 class="brand">Vélès</h1>
             </span></div>
-        <div class="box"><span><img class="logo" src="img/logo.png"></span></div>
+        <div class="box"><span><a href="index.php"><img class="logo" src="img/logo.png"></a></span></div>
         <div class="box"><span>
                 <!--empty for centering purposes-->
             </span></div>

@@ -37,7 +37,7 @@ header.navbar {
 .upper {
     box-sizing: border-box;
     margin: 0;
-    background-color: #2a75b3;
+    background-color: #A581EA;
     display: flex;
     align-items: center;
     padding: 0px 80px;
@@ -67,7 +67,7 @@ header.navbar {
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #6c9ec7;
+    background-color: #BFA8EA;
     display: flex;
     align-items: center;
 }
@@ -105,7 +105,7 @@ header.navbar {
 }
 
 .middle .searchbutton {
-    background-color: #2a75b3;
+    background-color: #A581EA;
     border: 0;
     color: white;
     padding: 0.5rem;
@@ -114,7 +114,7 @@ header.navbar {
 }
 
 .middle .searchbutton:hover {
-    background-color: #5499d1;
+    background-color: #BFA8EA;
 }
 
 .middle .btn {
@@ -142,7 +142,7 @@ header.navbar {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #2a75b3;
+    background-color: #A581EA;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10px;

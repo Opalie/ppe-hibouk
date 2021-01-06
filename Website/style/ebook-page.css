@@ -10,18 +10,18 @@ body{
     box-sizing: border-box;
 }
 
-h1{
+.page h1{
     font-size: larger;
     margin: 0;
 }
 
-hr{
+.page hr{
     color: gray;
     border: 1px solid gray;
 }
 
-a{
-    color: teal;
+.page a{
+    color: #A581EA;
 
 }
 
@@ -50,14 +50,14 @@ button[type=submit]{
     margin-right: auto;
     margin-bottom: 5px;
     color: white;
-    background: #36B700;
+    background: #BFA8EA;
     border-radius: 10px;
     border: 0 solid white;
     cursor: pointer;
 }
 
-p{
-    color:teal;
+.page p{
+    color: #A581EA;
     text-align: center;
     font-size: x-large;
     margin-bottom: 10px;

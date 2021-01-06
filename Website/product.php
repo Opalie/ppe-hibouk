@@ -1,10 +1,6 @@
 <?php
 
-try {
-    $bdd = new PDO('mysql:host=localhost;dbname=ppe;charset=UTF8', 'root', 'Xk3QPGYBBeEiRvZI');
-  } catch (Exception $e) {
-    die('Erreur :' . $e->getMessage());
-  }
+include_once './include/_dbSettings.php';
 
 
 // Check to make sure the id parameter is specified in the URL
@@ -33,7 +29,7 @@ if (isset($_GET['book_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/ebook-page.css"/>
+    <link rel="stylesheet" href="style/ebook-page.css" />
     <title><?= $ebook['book_title'] ?> - <?= $ebook['author_lastname'] ?> <?= $ebook['author_firstname'] ?></title>
 </head>
 
@@ -46,18 +42,18 @@ if (isset($_GET['book_id'])) {
         <div class="left">
             <img src="<?= $ebook['book_cover'] ?>" alt="<?= $ebook['book_title'] ?>">
             <span class="price">
-               <p>&euro; <?= $ebook['book_price'] = number_format($ebook['book_price'], 2) ?></p> 
+                <p>&euro; <?= $ebook['book_price'] = number_format($ebook['book_price'], 2) ?></p>
             </span>
             <button type="submit">Add to cart</button>
         </div>
 
         <div class="right">
-            <h1 class="name"><?= $ebook['book_title'] ?> - <a href="/author.php?ebook=$author=<?= $ebook['book_author'] ?>"><?= $ebook['author_firstname'] ?> <?= $ebook['author_lastname'] ?></a> (<?= $ebook['book_date'] ?>)</h1>
+            <h1 class="name"><?= $ebook['book_title'] ?> - <a href="./author.php?author_id=<?= $ebook['book_author'] ?>"><?= $ebook['author_firstname'] ?> <?= $ebook['author_lastname'] ?></a> (<?= $ebook['book_date'] ?>)</h1>
             <hr>
             <a href=""><?= $ebook['genre_name'] ?></a>
             <br>
             <div class="description">
-               <p><?= $ebook['book_desc'] ?></p> 
+                <p><?= $ebook['book_desc'] ?></p>
             </div>
         </div>
 
@@ -70,8 +66,13 @@ if (isset($_GET['book_id'])) {
 
     </div>
 
-</body>
 
+</body>
+<footer>
+    <?php
+    include_once './include/copyright.php';
+    ?>
+</footer>
 
 </html>
 
