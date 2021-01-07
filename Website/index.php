@@ -24,33 +24,34 @@ include_once './include/navbar.php';
 <body>
 
 
-
     <div class="container mt-5">
         <div class="row">
             <?php
             $stmt = $bdd->query("SELECT * FROM ebook");
             $stmt->execute();
             while ($ebook = $stmt->fetch()) {
-
             ?>
+
                 <div class="col-md-3 col-sm-6">
                     <div class="product-grid2">
                         <div class="product-image2">
-                            <a href="#">
-                                <?php echo '<img class="pic-1" src=' . $ebook['book_cover'];
-                                '>' ?>
+                            <?php echo "<a href='" . "./product.php?book_id=" . $ebook['book_id'] . "'></a>" ?>
+                            <?php echo '<img class="pic-1" src=' . $ebook['book_cover'];
+                            '>' ?>
 
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li> <?php echo "<a href='" . "./product.php?book_id=" . $ebook['book_id'] . "'>" . '<i class=" fa fa-eye"></i>' . "</a>" ?>
+
+                                </li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                             <a class="add-to-cart" href="">Add to cart</a>
                         </div>
                         <div class="product-content">
                             <h3 class="title"><a href="#"><?php echo $ebook['book_title'] ?></a></h3>
-                            <span class="price">11,00€</span>
+                            <span class="price"><?php echo $ebook['book_price'] . '€' ?></span>
                         </div>
                     </div>
                 </div>
