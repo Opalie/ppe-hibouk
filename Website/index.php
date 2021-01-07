@@ -24,7 +24,7 @@ include_once './include/navbar.php';
 <body>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row">
             <?php
             $stmt = $bdd->query("SELECT * FROM ebook");
