@@ -23,88 +23,40 @@ include_once './include/navbar.php';
 
 <body>
 
+
+
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid2">
-                    <div class="product-image2">
-                        <a href="#">
-                            <img class="pic-1" src="img/noimagefound.png">
-                            <img class="pic-2" src="img/noimagefound.png">
-                        </a>
-                        <ul class="social">
-                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                        <a class="add-to-cart" href="">Add to cart</a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">ebook</a></h3>
-                        <span class="price">11,00€</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid2">
-                    <div class="product-image2">
-                        <a href="#">
-                            <img class="pic-1" src="img/noimagefound.png">
-                            <img class="pic-2" src="img/noimagefound.png">
-                        </a>
-                        <ul class="social">
-                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                        <a class="add-to-cart" href="">Add to cart</a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">ebook</a></h3>
-                        <span class="price">11,00€</span>
+            <?php
+            $stmt = $bdd->query("SELECT * FROM ebook");
+            $stmt->execute();
+            while ($ebook = $stmt->fetch()) {
+
+            ?>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <?php echo '<img class="pic-1" src=' . $ebook['book_cover'];
+                                '>' ?>
+
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><?php echo $ebook['book_title'] ?></a></h3>
+                            <span class="price">11,00€</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid2">
-                    <div class="product-image2">
-                        <a href="#">
-                            <img class="pic-1" src="img/noimagefound.png">
-                            <img class="pic-2" src="img/noimagefound.png">
-                        </a>
-                        <ul class="social">
-                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                        <a class="add-to-cart" href="">Add to cart</a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">ebook</a></h3>
-                        <span class="price">11,00€</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid2">
-                    <div class="product-image2">
-                        <a href="#">
-                            <img class="pic-1" src="img/noimagefound.png">
-                            <img class="pic-2" src="img/noimagefound.png">
-                        </a>
-                        <ul class="social">
-                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                        <a class="add-to-cart" href="">Add to cart</a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">ebook</a></h3>
-                        <span class="price">11,00€</span>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
     <hr>
