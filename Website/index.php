@@ -41,7 +41,7 @@ include_once './include/navbar.php';
 
                             </a>
                             <ul class="social">
-                                <li> <?php echo "<a href='" . "./product.php?book_id=" . $ebook['book_id'] . "'>" . '<i class=" fa fa-eye"></i>' . "</a>" ?>
+                                <li> <?php echo "<a  data-tip='Quick View' href='" . "./product.php?book_id=" . $ebook['book_id'] . "'>" . '<i class=" fa fa-eye"></i>' . "</a>" ?>
 
                                 </li>
                                 <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
