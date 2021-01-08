@@ -1,6 +1,6 @@
 <?php
 
-include 'session_function.php';
+include '_dbSettings.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
